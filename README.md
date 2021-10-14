@@ -1,79 +1,45 @@
-# FlashCards Starter Kit
+# TERMINAL FLASHCARDS
+Mod 2 - First Solo Project
 
-## Fork This Repo
+## Table of Contents
+  - [Abstract](#abstract)
+  - [Technologies](#technologies)
+  - [Code Architecture](#code-architecture)
+  - [Illustrations](#illustrations)
+  - [Install + Setup](#set-up)
+  - [Contributors](#contributors)
+	- [Wins](#wins)
+	- [Challenges + Improvements](#challenges-+-Improvements)
+  - [Project Specs](#project-specs)
 
-On the top right corner of this page, click the **Fork** button.
+## Abstract
+  - The purpose of this project was to practice implementing Test-Driven Development by writing tests for our JavaScript before writing functionality to help ensure SRP design and prevent bugs. The end result is a little flashcard quiz which can be played in the terminal -- and a whole host of test suites that ensure it is functioning correctly!
 
-## Setup
+## Technologies
+  - Javascript
+  - Atom
+  - eslint
 
-Clone down the forked repo (from your GitHub). Since you don't want to name your project "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
+## Code Architecture
+  - JavaScript
 
-```bash
-git clone [remote-address] [what you want to name the repo]
-```
+## Illustrations
 
-Once you have cloned the repo, change into the directory and install the library dependencies. Run:
+  - ![A GIF of how the game works](flashcards.gif)
 
-```bash
-npm install
-```
+## Install + Setup
+  - If you're interested in practicing with these flashcards, clone this repo to your local machine, then `cd` into the appropriate directory and type `node index.js`. Then enjoy quizzing yourself on array iterator methods! You can use the arrow keys to change the highlighted answer, then hit return to make your selection.
 
-To verify that it is setup correctly, run `npm test` in your terminal. You should have 5 pending tests in your `Card` test file that show up.
+## Contributors
+  - [Nate Ewert-Krocker](https://github.com/newertkrocker)
 
-Running `node index.js` from the root of your project should result in the following message being displayed in your terminal: 
+## Wins
+  - This project helped me become more confident in writing test suites and was excellent practice for Test Driven Development. My tests saved me many a time!
+  - This was my first time using eslint to clean up my code, and I have to say I really appreciate the convenience of a linter!
 
-```bash
-Node server running on port 3000
-```
+## Challenges + Improvements
+  - I wasn't able to complete any of the optional extensions for this project -- I'm confident that I could manage them with additional time, but a quick turnaround deadline meant I had to cut my losses and focus on polishing up a MVP.
+  - Although I feel pretty confident that the tests I wrote help ensure basic correct functionality, I would have liked to have been more thorough in seeking out more happy/sad paths and edge cases. Again, the short turnaround time made it hard.
 
-*Note that you will not need to you run your server until you are instantiating your `Game` class in Iteration 3. Prior to that, you should be using TDD to drive your code. You should check the functionality of your application by running your tests via `npm test`.*
-
-
-## Where to Add Your Code
-
-### JavaScript
-
-**Create all of your feature code files in the `src` directory.**
-
-We will be using the `module.exports` and `require` syntax to share code across files.
-
-## How to View Your Code in Action
-
-Once you are working through Iteration 3, you will want to start your server to test your functionality.
-In the terminal, run:
-
-```bash
-node index.js
-```
-
-When the game is functioning appropriately, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of cards:
-
-![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
-
----
-
-## Test Files Organization
-
-Similar to feature code, your test code needs to be put in a specific place for it to run successfully.
-
-**Put all of your test files in the `test` directory.** As a convention, all test filenames should end with `-test.js`. For instance: `Round-test.js`.
-
-## Running Your Tests
-
-Run your test suite using the command:
-
-```bash
-npm test
-```
-
-The test results will output to the terminal.
-
----
-
-## Linting Your Code
-
-Run the command in your terminal `npm run lint` to run the linter on your JavaScript code. There will be errors and warnings right from the start in this starter kit - the linter is still running successfully.
-
-Your linter will look at the JavaScript files you have within the `src` directory and the `test` directory. 
-
----
+## Project Specs
+  - The project spec & rubric can be found [here](https://frontend.turing.edu/projects/flash-cards.html)
